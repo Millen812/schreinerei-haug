@@ -1,7 +1,8 @@
 module.exports = {
-  siteName: 'Gridsome starter bootstrap',
-  siteDescription: 'A starter project for Gridsome with Bootstrap and some other useful tools.',
-  siteUrl: 'https://gridsome-starter-bootstrap.loke.dev',
+  siteName: 'Schreinerei Ulrich Haug',
+  siteDescription:
+    'Schreinerei des Schreinermeisters Urlich Haug in Kleinkitzighofen',
+  siteUrl: 'schreinerei-ulrich-haug.netlify.com',
   plugins: [
     {
       use: '@gridsome/source-filesystem',
@@ -11,9 +12,9 @@ module.exports = {
         resolveAbsolutePaths: true,
         remark: {
           externalLinksTarget: '_blank',
-          externalLinksRel: ['nofollow', 'noopener', 'noreferrer'],
-        },
-      },
+          externalLinksRel: ['nofollow', 'noopener', 'noreferrer']
+        }
+      }
     },
     {
       use: '@gridsome/plugin-google-analytics',
@@ -30,12 +31,11 @@ module.exports = {
   ],
   css: {
     loaderOptions: {
-      scss: {
-      }
+      scss: {}
     }
   },
   devServer: {
     host: '0.0.0.0',
     port: 8080
   }
-}
+};
